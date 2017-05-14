@@ -84,5 +84,10 @@ public class Main {
       return new HikariDataSource(config);
     }
   }
+  
+  @RequestMapping("/hello")
+  String helloWorld() {
+	  return "Hello i am json";
+  }
 
 }
